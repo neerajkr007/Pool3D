@@ -1,0 +1,94 @@
+{
+    "_type": "export",
+    "_version" : 1,
+    "__export_format": 4,
+    "__export_date": "2021-07-13T14:44:35.320Z",
+    "__export_source": "insomnia.desktop.app:v2021.4.1",
+    "resources": [
+        {
+            "_id": "req_7e8500104c8c48f295d6acc9962d892a",
+            "parentId": "fld_a1267592d1d24a54822d75a302055a4b",
+            "modified": 1626186955643,
+            "created": 1598330730550,
+            "url": "http://13.250.35.182:5000/v1/user/login",
+            "name": "Login User",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "data":{
+                    "email" : "accout@txt12.com",
+                    "password" : "mugesh123"
+                }
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_57b88408e6f343d896fe50fb666ce9d6",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1599729815870,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_f17d2ea8344c4549823179d91611d5aa",
+            "parentId": "fld_0a4dedb75b3540eeae3e063d697e78c0",
+            "modified": 1626187199722,
+            "created": 1598344821978,
+            "url": "http://13.250.35.182:5000/v1/user/update-profile",
+            "name": "Update User Profile Details",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "data": {
+                    "email" : "",
+                    "password" : "",
+                    "username": "bond_0s",
+                    "gender" : "Male",
+                    "character_id": "woman_doctor",
+                    "intro_crib_tutorial_completed": "true",
+                    "pool_games_won": 0
+                }
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "description": "",
+                    "id": "pair_287438c041a64091a0cc2301db9a1b1e",
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjBlZGE0ZTdkZDhiMzI1NzE0MzRkMjBlIiwiaWF0IjoxNjI2MTg3MTUzLCJleHAiOjE2MjYxOTA3NTN9.k8AooBTdqXaqP8TLEoel-_pQjtOvXZXhN1Rp_QimqqM"
+                },
+                {
+                    "id": "pair_8f41ed46836d47e39526c9cc176fddd0",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjA2YzIyZDhiZWE5NWQ2ZjU5YTU4MDZiIiwiaWF0IjoxNjE3NzAwMTk5LCJleHAiOjE2MTc3MDM3OTl9.VGLjA-pv2pT6iuV3NbcwOxbW_4IhWHrcCKquT0r_J28",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1599727075800.2969,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        }
+    ]
+}

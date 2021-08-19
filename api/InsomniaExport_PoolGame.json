@@ -1,0 +1,317 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2021-07-13T14:44:35.320Z",
+    "__export_source": "insomnia.desktop.app:v2021.4.1",
+    "resources": [
+        {
+            "_id": "req_bd2f62aa484a43a7a94d1ecb6f2042f1",
+            "parentId": "fld_a1267592d1d24a54822d75a302055a4b",
+            "modified": 1626186968989,
+            "created": 1598328641986,
+            "url": "http://13.250.35.182:5000/v1/user/create",
+            "name": "Create User",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": [
+                    {
+                        "description": "",
+                        "disabled": true,
+                        "id": "pair_aecf803b11e144c2ba0a20a5671405bb",
+                        "name": "full_name",
+                        "value": "Meet Parikh"
+                    },
+                    {
+                        "description": "",
+                        "id": "pair_f81c634511d64edea0898da073092af1",
+                        "name": "password",
+                        "value": "mugesh123"
+                    },
+                    {
+                        "description": "",
+                        "disabled": true,
+                        "id": "pair_4eee8b3c639d47bb804b06572fadd12f",
+                        "name": "is_email_verified",
+                        "value": "false"
+                    },
+                    {
+                        "description": "",
+                        "disabled": true,
+                        "fileName": "C:\\Users\\MEET\\Downloads\\calendar.png",
+                        "id": "pair_04cd0dc95ae241b4bc57e52a8db84448",
+                        "name": "profile_avatar",
+                        "type": "file",
+                        "value": ""
+                    },
+                    {
+                        "description": "",
+                        "id": "pair_c50f1ed2fb7b44b28244fcd62bbb9e0a",
+                        "name": "email",
+                        "value": "accout@txt12.com"
+                    },
+                    {
+                        "name": "fcm_token",
+                        "value": "truf8t786t5r75t",
+                        "description": "",
+                        "id": "pair_554a69b6fd42402e9bf3fbd3074d1c63",
+                        "disabled": false
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_2095f4a6fa5345d4bac7aa62276ac325",
+                    "name": "Content-Type",
+                    "value": "multipart/form-data"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1599729815920,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_a1267592d1d24a54822d75a302055a4b",
+            "parentId": "wrk_bd801eaf0c0a4656851b67f890d998c0",
+            "modified": 1604649552971,
+            "created": 1599730729153,
+            "name": "Authentication Module",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1599811253041,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_bd801eaf0c0a4656851b67f890d998c0",
+            "parentId": null,
+            "modified": 1598328602589,
+            "created": 1598328602589,
+            "name": "Auth-and-socialization",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_7e8500104c8c48f295d6acc9962d892a",
+            "parentId": "fld_a1267592d1d24a54822d75a302055a4b",
+            "modified": 1626186955643,
+            "created": 1598330730550,
+            "url": "http://13.250.35.182:5000/v1/user/login",
+            "name": "Login User",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"email\": \"accout@txt12.com\",\n\t\"password\": \"mugesh123\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_57b88408e6f343d896fe50fb666ce9d6",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1599729815870,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_f17d2ea8344c4549823179d91611d5aa",
+            "parentId": "fld_0a4dedb75b3540eeae3e063d697e78c0",
+            "modified": 1626187199722,
+            "created": 1598344821978,
+            "url": "http://13.250.35.182:5000/v1/user/update-profile",
+            "name": "Update User Profile Details",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\": \"bond_0s\",\n\t\"gender\" : \"Male\",\n\t\"character_id\": \"woman_doctor\",\n\t\"intro_crib_tutorial_completed\": \"true\",\n\t\"pool_games_won\": 1\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "description": "",
+                    "id": "pair_287438c041a64091a0cc2301db9a1b1e",
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjBlZGE0ZTdkZDhiMzI1NzE0MzRkMjBlIiwiaWF0IjoxNjI2MTg3MTUzLCJleHAiOjE2MjYxOTA3NTN9.k8AooBTdqXaqP8TLEoel-_pQjtOvXZXhN1Rp_QimqqM"
+                },
+                {
+                    "id": "pair_8f41ed46836d47e39526c9cc176fddd0",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjA2YzIyZDhiZWE5NWQ2ZjU5YTU4MDZiIiwiaWF0IjoxNjE3NzAwMTk5LCJleHAiOjE2MTc3MDM3OTl9.VGLjA-pv2pT6iuV3NbcwOxbW_4IhWHrcCKquT0r_J28",
+                "prefix": "Bearer"
+            },
+            "metaSortKey": -1599727075800.2969,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_0a4dedb75b3540eeae3e063d697e78c0",
+            "parentId": "wrk_bd801eaf0c0a4656851b67f890d998c0",
+            "modified": 1604649556668,
+            "created": 1599731040303,
+            "name": "User Profile Module",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1599811253016,
+            "_type": "request_group"
+        },
+        {
+            "_id": "env_693e1df8eee3217632dafdd45e35ed682b321855",
+            "parentId": "wrk_bd801eaf0c0a4656851b67f890d998c0",
+            "modified": 1598328602755,
+            "created": 1598328602755,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1598328602755,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_693e1df8eee3217632dafdd45e35ed682b321855",
+            "parentId": "wrk_bd801eaf0c0a4656851b67f890d998c0",
+            "modified": 1626181379352,
+            "created": 1598328602758,
+            "name": "Default Jar",
+            "cookies": [
+                {
+                    "key": "connect.sid",
+                    "value": "s%3A-3zqVCoqX3sfPAMdHe6b6TYtFZn_sXim.GvFXmTVdJyfxwRS7u8g%2BDTbfnh6B1FcUHMSG%2BE%2Fhibs",
+                    "domain": "localhost",
+                    "path": "/",
+                    "httpOnly": true,
+                    "hostOnly": true,
+                    "creation": "2020-08-27T11:08:46.155Z",
+                    "lastAccessed": "2020-11-18T08:33:33.860Z",
+                    "id": "6368006034352576"
+                },
+                {
+                    "key": "GAPS",
+                    "value": "1:9horbc89FO6ehAB07U8oiHoqURNXVA:o5MXiZ1P37h8Q7oD",
+                    "expires": "2022-08-31T09:41:35.000Z",
+                    "domain": "accounts.google.com",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "extensions": [
+                        "Priority=HIGH"
+                    ],
+                    "hostOnly": true,
+                    "creation": "2020-08-31T09:41:34.851Z",
+                    "lastAccessed": "2020-08-31T09:41:34.854Z",
+                    "id": "8652385364541852"
+                },
+                {
+                    "key": "__Host-GAPS",
+                    "value": "1:9horbc89FO6ehAB07U8oiHoqURNXVA:o5MXiZ1P37h8Q7oD",
+                    "expires": "2022-08-31T09:41:35.000Z",
+                    "domain": "accounts.google.com",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "extensions": [
+                        "Priority=HIGH"
+                    ],
+                    "hostOnly": true,
+                    "creation": "2020-08-31T09:41:34.851Z",
+                    "lastAccessed": "2020-08-31T09:41:34.854Z",
+                    "id": "6904276377662943"
+                },
+                {
+                    "key": "fr",
+                    "value": "1KrAg27rth3mKiCYd..BfTMYO.6w.AAA.0.0.BfTMYO.AWWdi00E",
+                    "expires": "2020-11-29T09:42:37.000Z",
+                    "maxAge": 7775999,
+                    "domain": "facebook.com",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "hostOnly": false,
+                    "creation": "2020-08-31T09:42:38.391Z",
+                    "lastAccessed": "2020-08-31T09:42:38.391Z",
+                    "id": "8353110220803013"
+                },
+                {
+                    "key": "sb",
+                    "value": "DsZMX2xPQ3vtYZ6eQ3e8mHgD",
+                    "expires": "2022-08-31T09:42:38.000Z",
+                    "maxAge": 63072000,
+                    "domain": "facebook.com",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "hostOnly": false,
+                    "creation": "2020-08-31T09:42:38.391Z",
+                    "lastAccessed": "2020-08-31T09:42:38.391Z",
+                    "id": "21447745876299096"
+                },
+                {
+                    "key": "connect.sid",
+                    "value": "s%3A2Z_NuLOmXbQYDN_qnNVmJgFSzCvQ-QGY.RbRVt6t7Q%2FC000g1j9FgVjNMCG0cbU%2BVpyV7j6rXpVY",
+                    "domain": "ec2-13-250-35-182.ap-southeast-1.compute.amazonaws.com",
+                    "path": "/",
+                    "httpOnly": true,
+                    "hostOnly": true,
+                    "creation": "2020-09-02T08:24:11.280Z",
+                    "lastAccessed": "2020-09-02T08:56:58.462Z",
+                    "id": "9520291167015129"
+                },
+                {
+                    "key": "connect.sid",
+                    "value": "s%3AQqvgU9LjkrFGk3rSE1_NTpMagM61bqJj.cJzd%2FkwuSWJLc8LOVjv%2B1vAtX6KybYbWqpgexOAjY50",
+                    "domain": "13.250.35.182",
+                    "path": "/",
+                    "httpOnly": true,
+                    "hostOnly": true,
+                    "creation": "2021-04-06T07:01:03.289Z",
+                    "lastAccessed": "2021-07-13T13:02:59.351Z",
+                    "id": "8674775489138264"
+                }
+            ],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_6d062e038d314eb8b76bcd4127959ea1",
+            "parentId": "wrk_bd801eaf0c0a4656851b67f890d998c0",
+            "modified": 1598328602715,
+            "created": 1598328602715,
+            "fileName": "Auth-and-socialization",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}
